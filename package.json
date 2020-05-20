@@ -36,5 +36,8 @@
     "> 1%",
     "not dead"
   ],
-  "repository": "https://github.com/Wotusay/Codecollecter.git"
+  "repository": "https://github.com/Wotusay/Codecollecter.git",
+  "dependencies": {
+    "p5": "^1.0.0"
+  }
 }
