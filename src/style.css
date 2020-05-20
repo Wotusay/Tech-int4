@@ -10,3 +10,12 @@ html {
   box-sizing: inherit;
 }
 /* stylelint-enable */
+
+body {
+  background-color: rgb(255, 201, 38);
+}
+
+.heart {
+  width: 40vw;
+  height: auto;
+}
