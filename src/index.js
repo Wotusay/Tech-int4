@@ -1,3 +1,4 @@
+import './reset.css'
 import './style.css';
 import * as p5 from 'p5';
 
