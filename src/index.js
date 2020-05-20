@@ -1,28 +1,26 @@
 import './style.css';
+import * as p5 from 'p5';
 
-let mic;
+const s = sk => {
 
-function setup() {
-  createCanvas(710, 200);
+  // sk.translate(window.innerWidth/2,window.innerHeight/2);
 
-  // Create an Audio input
-  mic = new p5.AudioIn();
 
-  // start the Audio Input.
-  // By default, it does not .connect() (to the computer speakers)
-  mic.start();
-}
+  sk.setup = () => {
+    sk.createCanvas(window.innerWidth, window.innerHeight);
 
-function draw() {
-  background(200);
+    sk.loadImage('src/assets/images/heart.png', img => {
+      sk.image(img, 490, 100);
+    });
 
-  // Get the overall volume (between 0 and 1.0)
-  let vol = mic.getLevel();
-  fill(127);
-  stroke(0);
 
-  // Draw an ellipse with height based on volume
-  let h = map(vol, 0, 1, height, 0);
-  ellipse(width / 2, h - 25, 50, 50);
-}
+
+  };
+
+  sk.draw = () => {
+
+  };
+
+};
+const P5 = new p5(s);
 
